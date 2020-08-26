@@ -8,40 +8,44 @@
     <link rel="stylesheet" type="text/css" href="CSStyle.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="js/clock.js"></script>
 </head>
 
 <body>
-    <div id="wrapper">
-        <div class="head_box">
-            <h2 id="date">00</h2>
+    <div class="container">
+        <div class="head_box container-fluid">
+            <p id="date">00</p>
             <h2 id="time">00</h2>
-            <h3> Digital Clock By Chanpreet</h3>
+            <h6 class="my-3">Digital Clock By Chanpreet</h6>
         </div>
 
-        <div class="Alarm_box">
+        <div class="Alarm_box container-fluid">
 
-            <h2 id="alarm_label"></h2>
-            <div class="Alarm">
-                <div id="a1">
+            <h5 id="alarm_label"></h5>
+                
+  <div class="Alarm row">
+    <div class="col-lg-4 col-md-4 col-12">
                     <p>Alarm :</p>
-                </div>
-                <div id="a2">
-                    <select id="wakeUpTimeSelector">
+      </div>
+      
+    <div class="col-lg-4 col-md-4 col-12">
+                    <select class="form-control" id="wakeUpTimeSelector">
 
                     </select>
-                </div>
-                <div id="a3">
-                    <select id="MinuteSelector">
+      </div>
+      
+    <div class="col-lg-4 col-md-4 col-12">
+                    <select class="form-control" id="MinuteSelector">
 
                     </select>
-                </div>
-                <div id="a4">
-                    <select id="AMPM">
+      </div>
+      
+    <div class="col-lg-4 col-md-4 col-12">        <select  class="form-control" id="AMPM">
                         <option value="AM">AM</option>
                         <option value="PM">PM</option>
                     </select>
-                </div>
+      </div>
             </div>
         </div>
         <button id="alarmbutton">Set Alarm</button>
